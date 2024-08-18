@@ -1,0 +1,6 @@
+@Eventek.TicketManagement.Api_HostAddress = http://localhost:5071
+
+GET {{Eventek.TicketManagement.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

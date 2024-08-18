@@ -1,0 +1,6 @@
+@Eventek.LocationMapping.Api_HostAddress = http://localhost:5159
+
+GET {{Eventek.LocationMapping.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

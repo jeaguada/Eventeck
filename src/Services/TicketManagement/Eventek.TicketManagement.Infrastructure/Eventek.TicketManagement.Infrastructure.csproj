@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Eventek.TicketManagement.Domain\Eventek.TicketManagement.Domain.csproj" />
+    <ProjectReference Include="..\Eventek.TicketManagement.Application\Eventek.TicketManagement.Application.csproj" />
+    <ProjectReference Include="..\..\..\BuildingBlocks\Eventek.Infrastructure\Eventek.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+</Project>

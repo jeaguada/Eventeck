@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>26a40a17-552f-4e00-bd06-818dcd710415</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ApiGateway\Eventek.ApiGateway\Eventek.ApiGateway.csproj" />
+    <ProjectReference Include="..\..\Services\ArtistManagement\Eventek.ArtistManagement.Api\Eventek.ArtistManagement.Api.csproj" />
+    <ProjectReference Include="..\..\Services\EventManagement\Eventek.EventManagement.Api\Eventek.EventManagement.Api.csproj" />
+    <ProjectReference Include="..\..\Services\LocationMapping\Eventek.LocationMapping.Api\Eventek.LocationMapping.Api.csproj" />
+    <ProjectReference Include="..\..\Services\TicketManagement\Eventek.TicketManagement.Api\Eventek.TicketManagement.Api.csproj" />
+    <ProjectReference Include="..\..\Services\UserManagement\Eventek.UserManagement.Api\Eventek.UserManagement.Api.csproj" />
+    <ProjectReference Include="..\..\WebApp\Eventek.WebApp\Eventek.WebApp.csproj" />
+  </ItemGroup>
+
+</Project>
