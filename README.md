@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://ibb.co/Bj92gtj?text=Eventek" alt="Eventek Logo" width="320" height="150">
+  <img src="[https://ibb.co/Bj92gtj](https://ibb.co/Bj92gtj)?text=Eventek" alt="Eventek Logo" width="320" height="150">
   <h1 style="color: #333; font-size: 3em; margin-bottom: 0;">Eventek</h1>
   <p style="font-style: italic; color: #666;">Event Management System powered by .NET Aspire</p>
 </div>
@@ -25,15 +25,15 @@
 <pre style="background-color: #f6f8fa; padding: 16px; border-radius: 6px; overflow: auto;">
 src/
 +-- Orchestration/
-¦   +-- Eventek.AppHost
-¦   +-- Eventek.ServiceDefaults
+Â¦   +-- Eventek.AppHost
+Â¦   +-- Eventek.ServiceDefaults
 +-- BuildingBlocks/
 +-- Services/
-¦   +-- EventManagement/
-¦   +-- ArtistManagement/
-¦   +-- UserManagement/
-¦   +-- TicketManagement/
-¦   +-- LocationMapping/
+Â¦   +-- EventManagement/
+Â¦   +-- ArtistManagement/
+Â¦   +-- UserManagement/
+Â¦   +-- TicketManagement/
+Â¦   +-- LocationMapping/
 +-- WebApp/
 tests/
 +-- UnitTests/
