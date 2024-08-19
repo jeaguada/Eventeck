@@ -7,12 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <ProjectReference Include="..\..\Orchestration\Eventek.DefaultServices\Eventek.DefaultServices.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Orchestration\Eventek.DefaultServices\Eventek.DefaultServices.csproj" />
+    <PackageReference Include="Yarp.ReverseProxy" Version="2.2.0-preview.1.24266.1" />
   </ItemGroup>
 
 </Project>
