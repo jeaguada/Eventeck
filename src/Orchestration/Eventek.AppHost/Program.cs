@@ -1,17 +1,18 @@
+
 var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.Eventek_ApiGateway>("eventek-apigateway");
+var apiGateway = builder.AddProject<Projects.Eventek_ApiGateway>("apigateway");
 
-builder.AddProject<Projects.Eventek_ArtistManagement_Api>("eventek-artistmanagement-api");
+builder.AddProject<Projects.Eventek_ArtistManagement_Api>("artistmanagement").WithReference(apiGateway);
 
-builder.AddProject<Projects.Eventek_EventManagement_Api>("eventek-eventmanagement-api");
+builder.AddProject<Projects.Eventek_EventManagement_Api>("eventmanagement").WithReference(apiGateway);
 
-builder.AddProject<Projects.Eventek_LocationMapping_Api>("eventek-locationmapping-api");
+builder.AddProject<Projects.Eventek_LocationMapping_Api>("locationmapping").WithReference(apiGateway);
 
-builder.AddProject<Projects.Eventek_TicketManagement_Api>("eventek-ticketmanagement-api");
+builder.AddProject<Projects.Eventek_TicketManagement_Api>("ticketmanagement").WithReference(apiGateway);
 
-builder.AddProject<Projects.Eventek_UserManagement_Api>("eventek-usermanagement-api");
+builder.AddProject<Projects.Eventek_UserManagement_Api>("usermanagement").WithReference(apiGateway);
 
-builder.AddProject<Projects.Eventek_WebApp>("eventek-webapp");
+builder.AddProject<Projects.Eventek_WebApp>("webapp");
 
 builder.Build().Run();
